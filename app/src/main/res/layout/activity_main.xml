@@ -1,0 +1,193 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cajaraiz"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorPalomo"
+            android:layout_weight="1"
+            android:orientation="horizontal"><!-- Medida de proporción entre elementos respecto al padre-->
+            <LinearLayout
+                android:id="@+id/superiorizq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorGris"
+                android:orientation="horizontal"
+                android:onClick="cambiaColor"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorAzul"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/cajita1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPollito"
+                        android:orientation="horizontal"
+                        android:onClick="cambiaColor">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cajita2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        android:onClick="cambiaColor">
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/cajita3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        android:onClick="cambiaColor">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cajita4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPollito"
+                        android:orientation="horizontal"
+                        android:onClick="cambiaColor">
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorPollito"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/barra1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPollito"
+                android:orientation="horizontal"
+                android:onClick="cambiaColor">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/barra2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:onClick="cambiaColor">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/barra3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorGris"
+                android:orientation="horizontal"
+                android:onClick="cambiaColor">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/barra4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:orientation="horizontal"
+                android:onClick="cambiaColor">
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/colorGris"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tercio1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAzul"
+                android:orientation="horizontal"
+                android:onClick="cambiaColor">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tercio2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorRojo"
+                android:orientation="horizontal"
+                android:onClick="cambiaColor">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tercio3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPalomo"
+                android:orientation="horizontal"
+                android:onClick="cambiaColor"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/colorblanco"
+        android:gravity="center"
+        android:id="@+id/crono"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"
+        android:elevation="6dp"
+        android:onClick="accionFab"
+        android:src="@drawable/ic_play_circle" />
+</FrameLayout>
